@@ -308,9 +308,6 @@
           </div>
         </div>
 
-
-        <!-- https://goo.gl/maps/G16wMfGrgyHj3vncA -->
-
         <div class="col-md-6">
           <div id="map">
             <p class="map-text">- Pawan Nagar Branch -</p>
@@ -331,26 +328,24 @@
       <form action="https://formsubmit.co/2ee9103f77e583b28c8124bc304e8a4b" method="POST">
         <div class="column">
           <div class="text-field-name-1">
-            <input type="text" class="text" value=" Enter your name" onfocus="this.value = '';"
+            <input type="text" class="text" id="name" value=" Enter your name" onfocus="this.value = '';"
               onblur="if (this.value == '') {this.value = ' Enter your name';}">
 
           </div>
           <div class="text-field-email-1">
-
-            <input type="text" class="text" value="Enter your mobile number" onfocus="this.value = '';"
+            <input type="text" class="text" id="number" value="Enter your mobile number" onfocus="this.value = '';"
               onblur="if (this.value == '') {this.value = 'Enter your mobile number';}">
-
           </div>
+          
           <div class="text-field-subject-1">
-
-            <input type="text" class="text" value=" Subject" onfocus="this.value = '';"
+            <input type="text" class="text" value=" Subject" id="subject" onfocus="this.value = '';"
               onblur="if (this.value == '') {this.value = ' Subject';}">
-
           </div>
         </div>
+
         <div class="column">
           <div class="text-field-area-">
-            <textarea value="Message:" onfocus="if(this.value == 'Message') this.value='';"
+            <textarea value="Message:"id="message" onfocus="if(this.value == 'Message') this.value='';"
               onblur="if(this.value == '') this.value='Message';">Message</textarea>
           </div>
 
