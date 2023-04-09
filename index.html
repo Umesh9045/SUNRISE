@@ -47,7 +47,7 @@
 
         <li><a href="#section4">Courses</a></li>
 
-        <li><a href="https://www.youtube.com/@SunriseScienceInstitute"  target="_blank" class="external">YouTube</a>
+        <li><a href="https://www.youtube.com/@SunriseScienceInstitute" target="_blank" class="external">YouTube</a>
 
         <li><a href="#section5">Contact</a></li>
 
@@ -104,8 +104,7 @@
               <h4>Dreams comes true</h4>
             </div>
             <figure>
-              <a href="https://youtu.be/D-TdjYiH2pI" class="play"><img
-                  src="assets/images/Sunrise/logo-1.png"></a>
+              <a href="https://youtu.be/D-TdjYiH2pI" class="play"><img src="assets/images/Sunrise/logo-1.png"></a>
             </figure>
           </article>
         </div>
@@ -334,32 +333,32 @@
     <div class="container">
       <h3>Contact </h3>
       <p>if you have any question, please contact us:</p>
-      <form action="https://formsubmit.co/2ee9103f77e583b28c8124bc304e8a4b" method="POST">
+      <form action="#">
         <div class="column">
           <div class="text-field-name-1">
             <input type="text" class="text" id="name" value=" Enter your name" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = ' Enter your name';}">
+              onblur="if (this.value == '') {this.value = ' Enter your name';}" required>
 
           </div>
           <div class="text-field-email-1">
             <input type="text" class="text" id="number" value="Enter your mobile number" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = 'Enter your mobile number';}">
+              onblur="if (this.value == '') {this.value = 'Enter your mobile number';}" required>
           </div>
 
           <div class="text-field-subject-1">
-            <input type="text" class="text" value=" Subject" id="subject" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = ' Subject';}">
+            <input type="text" class="text" value="Subject" id="subject" onfocus="this.value = '';"
+              onblur="if (this.value == '') {this.value = ' Subject';}" required>
           </div>
         </div>
 
         <div class="column">
           <div class="text-field-area-">
             <textarea value="Message:" id="message" onfocus="if(this.value == 'Message') this.value='';"
-              onblur="if(this.value == '') this.value='Message';">Message</textarea>
+              onblur="if(this.value == '') this.value='Message';" required>Message</textarea>
           </div>
 
           <div class="button">
-            <input type="submit" id="form-submit" value="send message">
+            <input type="submit" id="form-submit" value="send message" onclick="whatsapp();">
           </div>
 
         </div>
@@ -368,7 +367,7 @@
     </div>
   </div>
 
-<!-- footer begins  -->
+  <!-- footer begins  -->
   <footer>
     <div class="container">
       <div class="row">
@@ -455,6 +454,30 @@
     $(window).scroll(function () {
       checkSection();
     });
+
+    function whatsapp() {
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("number").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+
+      if (name == "" && phone == "" && subject == "") {
+        alert("Please fill the details!");
+        return false;
+      }
+      else {
+        var url = "https://wa.me/9119477320?text="
+          + "*Name :* " + name + "%0a"
+          + "*Moblie No :* " + phone + "%0a" 
+          + "*Subject :* " + subject + "%0a" + "%0a"
+          + "*Message :* " + message + "%0a" + "%0a"
+          + "*-| Reqested from Sunrise for Web |-*";
+
+        window.open(url, '_blank').focus();
+
+        return true;
+      }
+    }
   </script>
 </body>
 
