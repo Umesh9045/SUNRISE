@@ -76,6 +76,7 @@
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
+
   <!-- About us section stats  -->
   <section class="section video" data-section="section2">
     <div class="container">
@@ -347,33 +348,29 @@
   <div class="contact2" id="contact">
     <div class="container">
       <h3>Contact </h3>
-      <p>if you have any question, please contact us:</p>
+      <p>If you have any question, Please contact us:</p>
       <form action="#">
         <div class="column">
           <div class="text-field-name-1">
-            <input type="text" class="text" id="name" value=" Enter your name" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = ' Enter your name';}" required>
+            <input type="text" class="text" id="name" placeholder=" Enter your name" required>
 
           </div>
           <div class="text-field-email-1">
-            <input type="text" class="text" id="number" value="Enter your mobile number" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = 'Enter your mobile number';}" required>
+            <input type="text" class="text" id="number" placeholder="Enter your mobile number" required>
           </div>
 
           <div class="text-field-subject-1">
-            <input type="text" class="text" value="Subject" id="subject" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = ' Subject';}" required>
+            <input type="text" class="text" placeholder="Subject" id="subject" required>
           </div>
         </div>
 
         <div class="column">
           <div class="text-field-area-">
-            <textarea value="Message:" id="message" onfocus="if(this.value == 'Message') this.value='';"
-              onblur="if(this.value == '') this.value='Message';" required>Message</textarea>
+            <textarea placeholder="Message:" id="message" required></textarea>
           </div>
 
           <div class="button">
-            <input type="submit" id="form-submit" value="send message" onclick="whatsapp();">
+            <input type="submit" id="form-submit" placeholder="send message" onclick="whatsapp();">
           </div>
 
         </div>
@@ -475,8 +472,17 @@
       var subject = document.getElementById("subject").value;
       var message = document.getElementById("message").value;
 
-      if (name == "" && phone == "" && subject == "") {
+      if (name == "") {
         alert("Please fill the details!");
+        return false;
+      }
+      if (phone == "") {
+        alert("Please fill your WhatsApp Mobile number!");
+        return false;
+      }
+
+      if (subject == "") {
+        alert("Please add your subject about inquiry!");
         return false;
       }
       else {
@@ -485,7 +491,7 @@
           + "*Moblie No :* " + phone + "%0a"
           + "*Subject :* " + subject + "%0a" + "%0a"
           + "*Message :* " + message + "%0a" + "%0a"
-          + "*-| Reqested from Sunrise for Web |-*";
+          + "*- Requested from Sunrise for Web -*";
 
         window.open(url, '_blank').focus();
 
