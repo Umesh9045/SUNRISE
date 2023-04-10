@@ -473,12 +473,19 @@
       var subject = document.getElementById("subject").value;
       var message = document.getElementById("message").value;
 
+      var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
       if (name == "") {
         alert("Please fill the details!");
         return false;
       }
       if (phone == "") {
         alert("Please fill your WhatsApp Mobile number!");
+        return false;
+      }
+
+      if(!phone.match(phoneno)) {
+        alert("Please enter 10 digit number!");
         return false;
       }
 
