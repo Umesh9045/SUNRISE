@@ -1722,6 +1722,10 @@ footer p a:hover {
   background: #FFFFFF;
   color: #000;
 }
+
+::placeholder{
+  color: #aaa7a7;
+}
 /*-- contact --*/
 
 .wrap {
