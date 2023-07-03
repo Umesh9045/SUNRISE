@@ -5,18 +5,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- <meta name="description" content=""> -->
-  <meta name="author" content="Umesh Sonawane">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-  <!-- Meta tags -->
-  <meta property="og:title" content="Sunrise Science Institute">
-  <meta property="og:description"
-    content="Sunrise Institute is a leading educational institution dedicated to providing quality education and empowering students for success in various fields.">
-  <meta property="og:image" content="https://www.sunriseinstitute.in/images/logo.png">
-  <meta property="og:url" content="https://www.sunriseinstitute.in/">
-  <meta property="og:type" content="website">
-
 
 
   <!-- Bootstrap core CSS -->
@@ -32,7 +23,11 @@
 </head>
 
 <body>
-
+  <!-- Popup container -->
+  <div id="popup-container">
+    <!-- Image element -->
+    <img id="popup-image" src="assets/images/Sunrise/popup.jpg" alt="Popup Image">
+  </div>
 
   <!--header starts-->
   <header class="main-header clearfix" role="header">
@@ -47,18 +42,20 @@
       <ul class="main-menu">
         <li><a href="#section1">Home</a></li>
 
-        <li class="has-submenu"><a href="#section2">About Us</a>
+        <li><a href="#section2">Our Results</a></li>
+
+        <li class="has-submenu"><a href="#section3"> About Us</a>
           <ul class="sub-menu">
-            <li><a href="#section2">What is Sunrise?</a></li>
-            <li><a href="#section3">Why Sunrise?</a></li>
+            <li><a href="#section3">What is Sunrise?</a></li>
+            <li><a href="#section4">Why Sunrise?</a></li>
           </ul>
         </li>
 
-        <li><a href="#section4">Courses</a></li>
+        <li><a href="#section5">Courses</a></li>
 
         <li><a href="https://www.youtube.com/@SunriseScienceInstitute" target="_blank" class="external">YouTube</a>
 
-        <li><a href="#section5">Contact</a></li>
+        <li><a href="#section6">Contact</a></li>
 
         <!-- <li><a href="https://api.whatsapp.com/send/?phone=9359889291&text&app_absent=0" class="external">External</a>
         </li> -->
@@ -87,7 +84,7 @@
 
 
   <!-- About us section stats  -->
-  <section class="section video" data-section="section2">
+  <section class="section video" data-section="section3">
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
@@ -103,7 +100,7 @@
               from Sunrise for Web.
             </p>
             <div class="main-button">
-              <a href="https://api.whatsapp.com/send/?phone=9359889291&text&app_absent=0" rel="sponsored"
+              <a href="https://api.whatsapp.com/send/?phone=9766727144&text&app_absent=0" rel="sponsored"
                 target="_blank">whatsApp Us</a>
 
               <!-- <a rel="sponsored" style="cursor: pointer"
@@ -138,7 +135,7 @@
   <!-- About us section ends  -->
 
   <!-- Why choose sunrise starts  -->
-  <section class="section why-us" data-section="section3">
+  <section class="section why-us" data-section="section4">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -213,7 +210,7 @@
   <!-- why choose sunrise ends  -->
 
   <!-- our courses section starts  -->
-  <section class="section courses" data-section="section4">
+  <section class="section courses" data-section="section5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -223,7 +220,7 @@
         </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <img src="assets/images/Sunrise/mht-cet1.jpg" alt="Course #1">
+            <img src="assets/images/Sunrise/MHT-CET.jpg" alt="Course #1">
             <div class="down-content">
               <h4>MHT-CET</h4>
               <p>MHT-CET Batches for 11th and 12th are available.</p>
@@ -241,7 +238,7 @@
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/Sunrise/jee1.png" alt="Course #2">
+            <img src="assets/images/Sunrise/JEE.jpg" alt="Course #2">
             <div class="down-content">
               <h4>JEE</h4>
               <p>JEE Mains Batches for 11th and 12th are available.</p>
@@ -278,7 +275,7 @@
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/Sunrise/boards.jpg" alt="Course #4">
+            <img src="assets/images/Sunrise/11th-&-12th-Sci.jpg" alt="Course #4">
             <div class="down-content">
               <h4>Boards - 11th & 12th</h4>
               <p>State Board Batches for 11th and 12th are available.</p>
@@ -296,7 +293,7 @@
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/Sunrise/crash course1.jpg" alt="Course #5">
+            <img src="assets/images/Sunrise/Crash-Course-For-MHT-CET.jpg" alt="Course #5">
             <div class="down-content">
               <h4>Crash Course</h4>
               <p>Crash course for MHT-CET and JEE mains are available
@@ -322,7 +319,7 @@
   <!-- our courses section ends  -->
 
   <!-- Google maps section starts  -->
-  <section class="section contact" data-section="section5">
+  <section class="section contact" data-section="section6">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -345,7 +342,7 @@
             <p class="map-text">- Pawan Nagar | Branch 2 -</p>
             <p class="map-text1">Contact No: 8888695762 </p>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.601989470287!2d73.75463479999999!3d19.9832338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddebef2d8ad9a7%3A0xad4ee7ecbb2ec666!2sSunrise%20science%20institute!5e0!3m2!1sen!2sin!4v1680098401694!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.86447868294!2d73.7545497!3d19.9722008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb3bbf3751c1%3A0x388487a7538b4642!2sSunrise%20Science%20Institute!5e0!3m2!1sen!2sin!4v1682430119711!5m2!1sen!2sin"
               width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
@@ -420,6 +417,27 @@
   <script src="assets/js/custom.js"></script>
 
   <script>
+
+    window.addEventListener('load', function () {
+      // Get the popup container and image elements
+      var popupContainer = document.getElementById('popup-container');
+      var popupImage = document.getElementById('popup-image');
+
+      // Show the popup container
+      popupContainer.style.display = 'block';
+
+      // Add a click event listener to the image to close the popup when clicked
+      popupImage.addEventListener('click', function () {
+        popupContainer.style.display = 'none';
+      });
+
+      // Add a click event listener to the close button to hide the popup
+      closeButton.addEventListener('click', function () {
+        popupContainer.style.display = 'none';
+      });
+    });
+
+
     //according to loftblog tut
     $('.nav li:first').addClass('active');
 
@@ -503,7 +521,7 @@
         return false;
       }
       else {
-        var url = "https://wa.me/9119477320?text="
+        var url = "https://wa.me/9766727144?text="
           + "*Name :* " + name + "%0a"
           + "*Moblie No :* " + phone + "%0a"
           + "*Subject :* " + subject + "%0a" + "%0a"
