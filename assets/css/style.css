@@ -1919,3 +1919,26 @@ textarea {
     width: 1170px;
   }
 }
+
+
+/* slider  */
+.video-container {
+  max-width: 50%;
+  margin: auto;
+  border: 8px solid #333; /* Dark border color */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure the border contains the video */
+  background-color: black;
+}
+
+.video-container video {
+  width: 50%;
+  height: 50%;
+}
+
+
+@media screen and (max-width: 875px) {
+  .video-container {
+    max-width: 100%; /* Change the width to 100% for smaller screens */
+  }
+} 
