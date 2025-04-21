@@ -1923,7 +1923,7 @@ textarea {
 
 /* slider  */
 .video-container {
-  max-width: 50%;
+  max-width: 75%;
   margin: auto;
   border: 8px solid #333; /* Dark border color */
   border-radius: 15px; /* Rounded corners */
